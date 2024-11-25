@@ -2,8 +2,9 @@
 A repository dedicated to exploring and understanding ReactJS render optimization techniques for large datasets, utilizing the powerful react-virtualized library.
 
 # Screen-Demo
-Rendering list of accordion with data collected from Faker library
-![image](https://github.com/user-attachments/assets/5ca54c15-e351-435c-83a6-f07aa910ff95)
+Rendering list of accordions with data collected from Faker library
+
+<img src="https://github.com/user-attachments/assets/51debe57-ca40-4aad-a42a-f94f30f50c3c"/>
 
 ## Images
 ![image](https://github.com/user-attachments/assets/571aca4b-7323-4066-b369-dab0c17c2838)
