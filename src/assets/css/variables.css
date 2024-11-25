@@ -1,0 +1,6 @@
+:root {
+    --footerBG: rgb(17, 17, 17);
+    --footerText: rgb(255, 255, 255);
+    --footerLogoContainerHeight: 60%;
+    --white: #ffffff;
+}

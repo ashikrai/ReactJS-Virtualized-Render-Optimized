@@ -1,0 +1,94 @@
+@import url(./variables.css);
+
+
+.accordionContainer{
+    /* border: 2px solid red; */
+    margin-bottom: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 14px 14px 0px 0px;
+}
+
+.accordionContainer .accordionTitle{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding: 0.5%;
+
+    background: white;
+    cursor: pointer;
+    border-radius: 14px 14px 0px 0px;
+    .accordionIndex{
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+    }
+    transition: all 0.3s ease-in-out;
+}
+.accordionContainer .accordionTitle:hover{
+    .accordionIndex{
+        opacity: 1;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+    }
+}
+
+.activeaccordionTitle{
+    background-color: rgb(173, 106, 236) !important;
+    color: white;
+}
+.accordionContainer .accordionTitle .avatarContainer{
+    background-color: rgb(228, 226, 226);
+    border-radius: 100%;
+    width: calc(30px + 1vw);
+    height: calc(30px + 1vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.accordionContainer .activeaccordionTitle .avatarContainer{
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    width: calc(30px + 1vw);
+    height: calc(30px + 1vw);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2%;
+}
+.accordionTitle .avatarContainer .avatar{
+    width: 70%;
+    border-radius: 100%;
+}
+.accordionTitle .title{
+    flex: 1;
+}
+
+.accordionTitle .accordionTitleIcon{
+}
+
+
+.accordionBody{
+    margin: 0% 1% 0% 1%;
+    /* width: 95%; */
+    text-wrap: wrap;
+    /* border: 2px solid green; */
+}
+
+.hide{
+    /* display: none; */
+    height: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 0%;
+}
+
+.show{
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+    padding-bottom: 1%;
+    /* display: block; */
+}
