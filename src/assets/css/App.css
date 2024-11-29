@@ -2,7 +2,8 @@
 
 #root{
   overflow: hidden;
-  background-image: url("../images/background.jpg");
+  background-image: url("../images/grad.jpg");
+  /* background-image: url("../images/background.jpg"); */
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 21px 21px 21px 21px;
@@ -12,16 +13,176 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 98vh;
+  height: 96vh;
+  padding: 0.5%;
 }
+/* Header Section */
 .Header{
-  background-color: bisque;
+  margin: 0.5% 0.5% 0% 0.5%;
+  padding: 0% 4% 0% 0%;
+
+  
+  background-color: rgb(239, 239, 239, 0.2);
+  color: var(--footerText);
+  font-size: calc(7px + 0.390625vw);
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  
+  border-radius: 21px 21px 21px 21px;
+  box-shadow: 4px 4px 20px rgba(188, 187, 187, 0.2);
+  transition: all 0.3s ease-in-out;
 }
+.Header .title{
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  /* text-align: right; */
+}
+.title .showTitle{
+  padding: 0px;
+  margin: 0px;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.title .hideTitle{
+  padding: 0px;
+  margin: 0px;
+  transform: scale(0);
+  width: 0px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Body section */
 .Body{
   flex: 1;
-  overflow-x: hidden;
-  overflow-y: auto;
-  padding: 0% 5% 0% 5%;
+  overflow: hidden;
+  padding: 0.5% 0.5% 0% 0%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-self: flex-start;
+  width: 98vw;
 }
+.Body .leftBodyContentClose{
+  padding: 0.3%;
+  margin-right: 1%;
+  margin-left: 0.5%;
+
+  width: 3%;
+  height: 7% !important;
+
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(230, 151, 213, 0.5), rgb(203, 203, 255, 0.5));
+  border-radius: 14px;
+  color: transparent;
+  transition:  all 0.3s ease-in-out;
+  
+  overflow: hidden;
+  .leftBodyContent{
+    width: 0%;
+    overflow: hidden;
+    transform: scale(0);
+    opacity: 0;
+    transition:  all 0.3s ease-in-out;
+  }
+}
+
+.Body .leftBodyContentOpen{
+  padding: 1%;
+  margin-right: 2%;
+  margin-left: 0.5%;
+  width: 30% !important;
+  
+  cursor: pointer;
+  background: linear-gradient(90deg, rgba(230, 151, 213, 0.5), rgb(203, 203, 255, 0.5));
+  border-radius: 14px 14px 14px 14px;
+  color: white;
+  transition:  all 0.3s ease-in-out;
+
+  .leftBodyContent{
+    width: 100%;
+    transform: scale(1);
+    opacity: 1;
+    transition:  all 0.3s ease-in-out;
+  }
+  .logoContainer{
+    transform: scale(1.2);
+  }
+}
+.leftBodyContentOpen .LBC-HeaderContent{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: last baseline;
+  gap: 5%;
+  .LBC-HC-Text{
+    flex: 1;
+  }
+}
+.LBC-HeaderContent .BackArrowIcon{
+	background-color: #d8b5f9;
+  border-radius: 100%;
+  color: #5e2b8d;
+  width: calc(15px + 1vw);
+  height: calc(15px + 1vw);
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoContainer{
+  background: linear-gradient(90deg, rgb(246, 153, 226), rgb(179, 179, 243));
+  width: calc(15px + 2vw);
+  height: calc(15px + 2vw);
+  border-radius: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logoContainer .logo{
+  width: 90%;
+  height: 90%;
+}
+.leftBodyContent .title{
+  /* border: 2px solid red; */
+  width: 100%;
+}
+
+.Body .rightBodyContent{
+  overflow-x: hidden;
+  overflow-y: auto; 
+  /* padding: 0% 3% 0% 0%; */
+  padding: 1.5%;
+  padding-top: 0.5%;
+  /* background-color: rgba(249, 188, 248, 0.5); */
+  background: linear-gradient(90deg, rgba(230, 151, 213, 0.5), rgb(203, 203, 255, 0.5));
+
+  border-radius: 14px;
+  width: 100%;
+}
+.Body .rightBodyContent::-webkit-scrollbar-track{
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
+	border-radius: 10px;
+	background-color: #d8b5f9;
+}
+
+
+.Body .rightBodyContent::-webkit-scrollbar{
+	width: 12px;
+}
+
+.Body .rightBodyContent::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+	background-color: #e8679d;
+}
+
 /* .Footer{
 } */
