@@ -1,6 +1,7 @@
 import { useState } from "react";
 import AccordionItem from "./AccordionItem";
 import {userData} from "../assets/interfaces/dataTypeDefinitions"
+import "../assets/css/AccordionItem.css"
 
 interface accordionDatatype{
     data: userData[] | null;
@@ -14,11 +15,11 @@ export default function AccordionList({data}:accordionDatatype) {
     }
 
     return (
-        <div>
+        <div className="accordionListContainer">
             {data && data.map((user:userData,index:number)=>(
-                <div key={index}>
-                    <AccordionItem onClick={onClickFunction} isOpen={index === activeaccordion} index={index} accordionData={user} />
-                </div>
+                // <div key={index}>
+                    <AccordionItem key={index} onClick={onClickFunction} isOpen={index === activeaccordion} index={index} accordionData={user} />
+                // </div>
             ))
             }
         </div>

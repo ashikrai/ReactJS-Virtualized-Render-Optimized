@@ -21,20 +21,20 @@ export default function Footer() {
                 </p>
             </div>
             <div className="RightContent">
-                <div className="logoContainer">
-                    <a className="logo" target="https://github.com/ashikrai">
+                <div className="logoContainers">
+                    <a className="logo" href="https://github.com/ashikrai" target="_blank">
                         <img alt="github_logo" src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"/>
                     </a>
-                    <a className="logo" target="https://medium.com/@ashikthulungrai7">
+                    <a className="logo" target="_blank" href="https://medium.com/@ashikthulungrai7">
                         <img alt="Medium_logo" src="https://img.shields.io/badge/Medium-%23000000.svg?logo=medium&logoColor=white"/>
                     </a>
-                    <a className="logo" target="https://www.linkedin.com/in/ashik-rai/">
+                    <a className="logo" target="_blank" href="https://www.linkedin.com/in/ashik-rai/">
                         <img alt="linked_logo" src="https://img.shields.io/badge/Linkedin-%230077B5.svg?logo=linkedin&logoColor=white"/>
                     </a>
-                    <a className="logo" target="https://www.instagram.com/behind_pixl/">
+                    <a className="logo" target="_blank" href="https://www.instagram.com/behind_pixl/">
                         <img alt="instagram_logo" src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white"/>
                     </a>
-                    <a className="logo">
+                    <a style={{background: 'white', borderRadius: "0%"}} className="logo" target="_blank" href="https://www.instagram.com/behind_pixl/">
                         <img src={logo} alt="Logo" className="logo"/>
                     </a>
                 </div>

@@ -1,0 +1,75 @@
+.LBC-TabContainer{
+    margin-top: 5%;
+    display: flex;
+    gap: 2%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.LBC-TabContainer .LBC-TC-TabItem, .inputcontainer .inputTab{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(31, 25, 29, 0.5), rgba(172, 70, 161, 0.5));
+    /* background-color: rgb(255, 255, 255, 0.5); */
+    padding: 2%;
+    width: 45%;
+    border-radius: 14px;
+    margin-bottom: 1%;
+    /* flex: 1; */
+    transition: all 0.3s ease-in-out;
+    
+    h2{
+        padding-top: 3%;
+        margin: 0%;
+        font-size: calc(12px + 0.1vw);
+    }
+    .TBC-TC-Link{
+        margin-top: calc(3px + 0.5h);
+        text-decoration: underline;
+        color: rgb(195, 195, 248);
+        font-size: calc(9px + 0.1vw);
+    }
+}
+.LBC-TabContainer .LBC-TC-TabItem:hover{
+    background: linear-gradient(180deg, rgba(31, 25, 29, 0.3), rgba(172, 70, 161, 0.3));
+    transition: all 0.3s ease-in-out;
+    .LBC-TC-Link-Icon{
+        opacity: 1;
+        transition: all 0.2s ease-in;
+        transform: scale(0.8);
+        color: white;
+    }
+}
+
+.LBC-TabContainer .TabItem-icon-containers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .LBC-TC-Icon{
+        color: #fffdfd;
+    }
+    .LBC-TC-Link-Icon{
+        /* opacity: 0; */
+        transform: scale(0);
+        transition: all 0.1s ease-in;
+    }
+}
+
+
+.inputcontainer{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    p{
+        margin: 0%;
+        padding: 0%;
+    }
+}
+.inputcontainer .sliderInput{
+    width: 90%;
+    color: #000;
+    align-self: center;
+}
