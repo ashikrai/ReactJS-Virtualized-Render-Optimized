@@ -4,10 +4,14 @@ A repository dedicated to exploring and understanding ReactJS render optimizatio
 # Screen-Demo
 Rendering list of accordions with data collected from Faker library
 
-<img src="https://github.com/user-attachments/assets/51debe57-ca40-4aad-a42a-f94f30f50c3c"/>
+<!-- <img src="https://github.com/user-attachments/assets/51debe57-ca40-4aad-a42a-f94f30f50c3c"/> -->
+<img src="https://github.com/user-attachments/assets/d34e1158-aa41-47b0-a1ba-11cf1528fc21"/>
 
 ## Images
-![image](https://github.com/user-attachments/assets/571aca4b-7323-4066-b369-dab0c17c2838)
+# Open an Accordion: Explore UserData
+![image](https://github.com/user-attachments/assets/c55f306a-8f2f-406a-aa50-651ed89c220b)
+
+
 
 # Goals
 
